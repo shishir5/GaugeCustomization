@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="anthracite">#2B292E</color>
+    <color name="orangeRed">#FF4500</color>
+    <color name="green">#008000</color>
+    <color name="colorOrange">#F26C4F</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkBlack">#434343</color>
+
+    <color name="empty_tank">#ec5151</color>
+    <color name="medium_tank">#93ee85</color>
+    <color name="full_tank">#429321</color>
+    <color name="mark_color">#b4b572</color>
+    <color name="mark_color_1">#ff888888</color>
+    <color name="mark_color_2">#ffbbbbbb</color>
+</resources>

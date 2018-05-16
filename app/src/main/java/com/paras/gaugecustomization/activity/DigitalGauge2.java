@@ -12,7 +12,7 @@ public class DigitalGauge2 extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activi ty_gauge2);
+        setContentView(R.layout.activity_gauge2);
         init();
     }
 

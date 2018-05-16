@@ -1,27 +1,28 @@
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item
-        android:id="@android:id/background">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
         <shape>
-            <solid android:color="#000000"/>
-            <corners android:bottomRightRadius="7dp"
+            <solid android:color="#000000" />
+            <corners
                 android:bottomLeftRadius="7dp"
+                android:bottomRightRadius="7dp"
                 android:topLeftRadius="7dp"
-                android:topRightRadius="7dp"/>
+                android:topRightRadius="7dp" />
         </shape>
     </item>
     <item
-        android:bottom="2dp"
-        android:top="2dp"
-        android:right="2dp"
-        android:left="2dp"
         android:id="@android:id/secondaryProgress"
-        android:drawable="@drawable/fuel_meter_color_gradient"/>
-
-    <item android:id="@android:id/progress"
         android:bottom="2dp"
-        android:top="2dp"
+        android:drawable="@drawable/fuel_meter_color_gradient"
+        android:left="2dp"
         android:right="2dp"
-        android:left="2dp">
+        android:top="2dp" />
+
+    <item
+        android:id="@android:id/progress"
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
         <clip android:drawable="@color/mark_color_2" />
     </item>
 </layer-list>

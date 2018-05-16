@@ -9,20 +9,19 @@ import com.paras.gaugecustomization.R;
 
 public class DigitalGauge2 extends Activity {
 
-@Override
-protected void onCreate(@Nullable Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gauge2);
+        setContentView(R.layout.activi ty_gauge2);
         init();
-        }
+    }
 
-private void init() {
+    private void init() {
 
-        }
+    }
 
-public int dpToPixels(int i) {
+    public int dpToPixels(int i) {
         return (int) TypedValue
-        .applyDimension(TypedValue.COMPLEX_UNIT_DIP, i, getResources().getDisplayMetrics());
-
-        }
-        }
+                .applyDimension(TypedValue.COMPLEX_UNIT_DIP, i, getResources().getDisplayMetrics());
+    }
+}

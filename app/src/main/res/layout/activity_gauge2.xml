@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:maxHeight="40dp"
+            android:tickMark="@drawable/tickmark"
+            android:max="10"
+            android:layout_centerInParent="true"
+            android:rotation="90"
+            android:progressDrawable="@drawable/digital_seekbar_bg"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/view"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/needle"
+            android:rotation="-90"
+            android:layout_marginLeft="200dp"
+            android:id="@+id/iv_fuel_arrow"
+            android:layout_toRightOf="@+id/view"/>
+</RelativeLayout>

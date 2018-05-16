@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 intent.setClass(MainActivity.this, ManualGaugeActivity.class);
                 break;
             case 1:
-                intent.setClass(MainActivity.this, DigitalGaugeActivity.class);
+                intent.setClass(MainActivity.this, DigitalGauge2.class);
                 break;
             case 2:
                 intent.setClass(MainActivity.this, DigitalGaugeSecondActivity.class);

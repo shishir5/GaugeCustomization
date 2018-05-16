@@ -19,4 +19,7 @@
     <color name="mark_color">#b4b572</color>
     <color name="mark_color_1">#ff888888</color>
     <color name="mark_color_2">#ffbbbbbb</color>
+    <color name="mark_a_1">#ec5151</color>
+    <color name="mark_b_2">#93ee85</color>
+    <color name="mark_c_3">#429321</color>
 </resources>

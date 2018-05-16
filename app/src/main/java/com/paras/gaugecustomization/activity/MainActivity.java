@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private void init() {
         ListView listView = findViewById(R.id.list);
-        String[] values = new String[]{"Manual Gauge", "Digital Gauge"};
+        String[] values = new String[]{"Manual Gauge", "Digital Gauge", "Digital Gauge Second"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
         listView.setAdapter(adapter);
@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 1:
                 intent.setClass(MainActivity.this, DigitalGaugeActivity.class);
+                break;
+            case 2:
+                intent.setClass(MainActivity.this, DigitalGaugeSecondActivity.class);
                 break;
         }
         startActivity(intent);

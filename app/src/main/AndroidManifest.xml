@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ManualGaugeActivity" />
+        <activity android:name=".activity.DigitalGauge2" />
         <activity android:name=".activity.DigitalGaugeActivity" />
     </application>
 

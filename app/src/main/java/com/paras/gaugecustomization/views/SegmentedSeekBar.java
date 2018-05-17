@@ -32,13 +32,15 @@ public class SegmentedSeekBar extends AppCompatSeekBar {
     private void init() {
         mProgressPaint = new Paint();
         mProgressPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        mProgressPaint.setColor(Color.LTGRAY);
-        mProgressPaint.setStrokeWidth(2.0f);
+        mProgressPaint.setColor(Color.WHITE);
+        mProgressPaint.setStrokeWidth(4.0f);
     }
 
     @Override
     protected synchronized void onDraw(Canvas canvas) {
-        int halfHeight = getHeight() / 2;
+        super.onDraw(canvas);
+        int yCentre = getHeight() / 2;
+        int width = (getHeight() - (getPaddingBottom() + getPaddingTop())) / 2;
 
         int pos;
         float div = (getWidth() - getPaddingRight() - getPaddingLeft()) / (getMax());
@@ -46,11 +48,10 @@ public class SegmentedSeekBar extends AppCompatSeekBar {
             pos = (int) (div * i) + getPaddingLeft();
             canvas.drawLine(
                     pos + 1.0f,
-                    halfHeight - (halfHeight / 2.0f),
+                    yCentre - (width / 4.0f),
                     pos + 1.0f,
-                    halfHeight + (halfHeight / 2.0f),
+                    yCentre + (width / 4.0f),
                     mProgressPaint);
         }
-        super.onDraw(canvas);
     }
 }

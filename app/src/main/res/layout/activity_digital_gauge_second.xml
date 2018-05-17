@@ -5,12 +5,17 @@
 
     <com.paras.gaugecustomization.views.SegmentedSeekBar
         android:layout_width="wrap_content"
-        android:layout_height="220dp"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:max="100"
+        android:max="10"
+        android:padding="30dp"
+        android:minWidth="220dp"
+        android:maxWidth="220dp"
+        android:minHeight="24dp"
+        android:maxHeight="24dp"
         android:progress="0"
         android:progressDrawable="@drawable/progress"
         android:rotation="270"
-        android:thumb="@drawable/needle_vertical" />
+        android:thumb="@drawable/ticker_pointer" />
 
 </RelativeLayout>

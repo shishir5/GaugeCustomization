@@ -40,17 +40,18 @@ public class SegmentedSeekBar extends AppCompatSeekBar {
     protected synchronized void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         int yCentre = getHeight() / 2;
-        int width = (getHeight() - (getPaddingBottom() + getPaddingTop())) / 2;
+        int width = getMinimumHeight()/ 2;
 
         int pos;
         float div = (getWidth() - getPaddingRight() - getPaddingLeft()) / (getMax());
+
         for (int i = 1; i < getMax(); i++) {
             pos = (int) (div * i) + getPaddingLeft();
             canvas.drawLine(
                     pos + 1.0f,
-                    yCentre - (width / 4.0f),
+                    yCentre - width + 1.0f,
                     pos + 1.0f,
-                    yCentre + (width / 4.0f),
+                    yCentre + width - 1.0f,
                     mProgressPaint);
         }
     }
